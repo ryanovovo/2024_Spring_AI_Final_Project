@@ -33,7 +33,7 @@ def main(test_times=10):
             print(f"Test {i+1}: Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1 Score: {f1score}")
             df.loc[len(df)] = {"Test": i+1, "Accuracy": accuracy, "Precision": precision, "Recall": recall, "F1 Score": f1score}
 
-        df.to_csv(f"./results/{prompt_type}_results.csv")
+        df.to_csv(f"./results/{prompt_type}.csv")
         del model
         del tokenizer
         gc.collect()
@@ -49,7 +49,7 @@ def main(test_times=10):
             print(f"Test {i+1}: Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1 Score: {f1score}")
             df.loc[len(df)] = {"Test": i+1, "Accuracy": accuracy, "Precision": precision, "Recall": recall, "F1 Score": f1score}
 
-        df.to_csv(f"./results/{prompt_type}_unfinetuned_results.csv")
+        df.to_csv(f"./results/{prompt_type}_unfinetuned.csv")
         del model
         del tokenizer
         gc.collect()
