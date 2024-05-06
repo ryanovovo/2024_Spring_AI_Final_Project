@@ -33,7 +33,7 @@ def main(test_times=10):
             print(f"Test {i+1}: Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1 Score: {f1score}")
             df.loc[len(df)] = {"Test": i+1, "Accuracy": accuracy, "Precision": precision, "Recall": recall, "F1 Score": f1score}
 
-        df.to_csv(f"./results/{prompt_type}.csv", index=False)
+        df.to_csv(f"./results/{prompt_type}_fintuned.csv", index=False)
         del model
         del tokenizer
         gc.collect()
