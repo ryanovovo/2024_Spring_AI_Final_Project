@@ -6,4 +6,5 @@
 !main.py
 !utils.py
 !finetune.py
+!results/
 !results/*
