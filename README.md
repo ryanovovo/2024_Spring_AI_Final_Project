@@ -1,6 +1,12 @@
 # 2024 Spring AI Final Project
 
 ## Requrements
+### Hardware
+Nvidia GPU with VRAM >= 8G
+
+### Software
+sudo apt install -y nvidia-cuda-toolkit  
+
 conda create --name 2024_Spring_AI_Final_Project python=3.10
 
 conda activate 2024_Spring_AI_Final_Project
