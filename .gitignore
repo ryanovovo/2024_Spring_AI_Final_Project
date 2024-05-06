@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files and directories
+!.gitignore
+!main.py
+!utils.py
+!finetune.py
+!results/*
